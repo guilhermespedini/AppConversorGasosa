@@ -22,6 +22,13 @@ const FuelComparison = () => {
 
   return (
     <View style={styles.container}>
+		  <View style={styles.blocoImagem}>
+		  	<Image style={styles.imagem}
+        		source={
+					require('./assets/alcohol.png')
+				}
+      		/>
+		  </View>
 		  <Text style={styles.title}>Conversor do Spedini</Text>
 	  <View style={styles.card}>
       <Text style={styles.label}>DIGITE O ATUAL PREÇO DO ÁLCOOL:</Text>
@@ -57,6 +64,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
+	backgroundColor: '#000000',
   },
 	 imagem:{
 	width: 250,
@@ -66,6 +74,8 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     marginBottom: 8,
+	color:'#fff'
+	
   },
   input: {
     width: '50%',
@@ -74,12 +84,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 4,
     marginBottom: 16,
+	color:'#fff',
     paddingHorizontal: 8,
   },
   result: {
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 16,
+	color:'#fff'
   },
   title: {
 	fontSize: 24,
@@ -98,7 +110,8 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 4,
 	borderWidth: 3,
-	borderColor: '#EFF6E0'
+	borderColor: '#EFF6E0',
+	color: '#ffffff',
 }
 
 });
